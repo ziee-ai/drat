@@ -1,0 +1,12 @@
+Package: mcpserver
+Version: 0.1.0
+Depends: R (>= 4.3)
+Imports: R6 (>= 2.5.0), httr2 (>= 1.0.0), jose (>= 1.2.0), jsonlite (>=
+        1.8.0), jsonvalidate (>= 1.3.0), later (>= 1.3.0), mirai (>=
+        2.0.0), nanonext (>= 1.9.0), openssl (>= 2.0.0), promises (>=
+        1.2.0), rlang (>= 1.1.0)
+Suggests: DBI (>= 1.2.0), pkgload, processx, RSQLite (>= 2.3.0),
+        testthat (>= 3.0.0), withr
+License: MIT + file LICENSE
+MD5sum: 68263a2a6094930abf526981e60ccd1a
+NeedsCompilation: no
