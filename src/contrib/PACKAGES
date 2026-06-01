@@ -10,3 +10,15 @@ Suggests: DBI (>= 1.2.0), pkgload, processx, RSQLite (>= 2.3.0),
 License: MIT + file LICENSE
 MD5sum: 68263a2a6094930abf526981e60ccd1a
 NeedsCompilation: no
+
+Package: rcpa.mcpserver
+Version: 0.1.0
+Depends: R (>= 4.3)
+Imports: mcpserver (>= 0.1.0), jsonlite, httr2, processx, mirai,
+        nanonext, promises, openssl
+Suggests: DBI (>= 1.2.0), RSQLite (>= 2.3.0), testthat (>= 3.0.0),
+        withr, mockery, RCPA, SummarizedExperiment, S4Vectors, limma,
+        DESeq2, edgeR
+License: GPL-3 | file LICENSE
+MD5sum: 7b00984ee9a9805f6dcc4dbb394f20ed
+NeedsCompilation: no
