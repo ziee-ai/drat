@@ -13,6 +13,9 @@
     pre { background: #f4f4f4; padding: 1rem; border-radius: 4px; overflow-x: auto;
           font-size: 0.92em; }
     h1 { margin-top: 0; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid #eee;
+             vertical-align: top; }
     a { color: #0366d6; }
   </style>
 </head>
@@ -21,11 +24,28 @@
   <p>R packages from <a href="https://github.com/ziee-ai">ziee-ai</a>,
   distributed as a <a href="https://github.com/eddelbuettel/drat">drat</a> archive.</p>
 
-  <h2>Install</h2>
-  <pre>install.packages("&lt;package&gt;",
-                 repos = "https://ziee-ai.github.io/drat")</pre>
+  <h2>Available packages</h2>
+  <table>
+    <tr><th>Package</th><th>Description</th><th>Source</th></tr>
+    <tr><td><code>mcpserver</code></td>
+        <td>Model Context Protocol server SDK for R</td>
+        <td><a href="https://github.com/ziee-ai/mcpserver-r">mcpserver-r</a></td></tr>
+    <tr><td><code>rcpa.mcpserver</code></td>
+        <td>MCP server exposing the RCPA bioinformatics toolkit</td>
+        <td><a href="https://github.com/ziee-ai/rcpa-mcpserver">rcpa-mcpserver</a></td></tr>
+    <tr><td><code>dscc.mcpserver</code></td>
+        <td>MCP server for the DSCC cancer-subtyping method</td>
+        <td><a href="https://github.com/ziee-ai/dscc-mcpserver">dscc-mcpserver</a></td></tr>
+  </table>
 
-  <p>No packages have been published yet.</p>
+  <h2>Install</h2>
+  <pre>install.packages("mcpserver",
+                 repos = c("https://ziee-ai.github.io/drat", getOption("repos")))</pre>
+  <p>Include CRAN (via <code>getOption("repos")</code>) so dependencies resolve.
+  All packages are pure R, so the source tarballs install on Linux, macOS, and
+  Windows alike. <code>rcpa.mcpserver</code> and <code>dscc.mcpserver</code> depend
+  on <code>mcpserver</code> (pulled from this drat automatically); their analysis
+  tools additionally need Bioconductor packages.</p>
 
   <p><a href="https://github.com/ziee-ai/drat">Source for this archive on GitHub</a></p>
 </body>
