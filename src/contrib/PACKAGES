@@ -20,7 +20,7 @@ Imports: R6 (>= 2.5.0), httr2 (>= 1.0.0), jose (>= 1.2.0), jsonlite (>=
 Suggests: DBI (>= 1.2.0), pkgload, processx, RSQLite (>= 2.3.0),
         testthat (>= 3.0.0), withr
 License: MIT + file LICENSE
-MD5sum: 583eaee7718e44100be015762f993091
+MD5sum: aba058d2536287693ed716566c026a87
 NeedsCompilation: no
 
 Package: rcpa.mcpserver
