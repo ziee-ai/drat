@@ -32,5 +32,5 @@ Suggests: DBI (>= 1.2.0), RSQLite (>= 2.3.0), testthat (>= 3.0.0),
         withr, mockery, RCPA, SummarizedExperiment, S4Vectors, limma,
         DESeq2, edgeR
 License: GPL-3 | file LICENSE
-MD5sum: 7b00984ee9a9805f6dcc4dbb394f20ed
+MD5sum: 36dfe9a63d292f86b7c3f093a60f5aab
 NeedsCompilation: no
