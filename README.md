@@ -27,15 +27,14 @@ this drat automatically. Their analysis tools additionally need Bioconductor
 packages (e.g. `SummarizedExperiment`, `limma`, `DESeq2`, `edgeR`) — install those
 separately via `BiocManager`.
 
-## Publishing a package
+## Supported platforms
 
-Each source repo's `.github/workflows/release.yml` builds, `R CMD check`s, and
-publishes to this drat on a `v*` tag (via `drat::insertPackage` → push to
-`gh-pages`). To add one manually from a local `gh-pages` checkout:
+All packages are pure R, so the source tarballs install on every platform with no
+compiler toolchain. Each release is verified in CI across:
 
-```r
-drat::insertPackage("<package>_<version>.tar.gz",
-                    repodir = "<path-to-gh-pages-checkout>")
-```
-
-Commit the updated `src/contrib/` index on `gh-pages` and push.
+| OS | Arch | R versions |
+|---|---|---|
+| Linux (Ubuntu) | x86_64 | release, devel, oldrel-1 |
+| Linux (Ubuntu) | arm64 | release |
+| macOS (Apple Silicon) | arm64 | release |
+| Windows | x86_64 | release |
