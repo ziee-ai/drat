@@ -7,7 +7,7 @@ Suggests: DBI (>= 1.2.0), RSQLite (>= 2.3.0), testthat (>= 3.0.0),
         withr, mockery, magrittr, matrixStats, SNFtool, igraph,
         cluster, survival, RhpcBLASctl
 License: MIT + file LICENSE
-MD5sum: a02d229ce55b0c2358be9095869849de
+MD5sum: 9ba8805e3801543de2f7ce99eed5aa3c
 NeedsCompilation: no
 
 Package: mcpserver
